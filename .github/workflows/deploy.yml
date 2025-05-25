@@ -11,10 +11,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Lint HTML files
-        uses: html-validator/action@v1
-        with:
-          files: 'index.html'
+      - name: Validate HTML
+        uses: Cyb3r-Jak3/html5validator-action@v0.4.0
 
   docker-build:
     runs-on: ubuntu-latest
